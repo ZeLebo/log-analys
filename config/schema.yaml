@@ -1,0 +1,26 @@
+buffer_size: 50000
+
+fields:
+  timestamp:
+    - ts
+    - time
+    - timestamp
+  level:
+    - level
+  service:
+    - logger
+    - service
+    - filename
+  message:
+    - msg
+    - message
+
+custom_fields:
+  call_id:
+    - call_id
+  company_name:
+    - company_name
+
+non_json:
+  append_to_previous_raw: true
+  create_event_if_no_last: true
